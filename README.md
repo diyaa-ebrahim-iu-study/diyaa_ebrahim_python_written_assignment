@@ -1,7 +1,7 @@
 # Overview
 
 This Project solves the Python assignment for the course. It:
-    - Loads trainging, test and ideal function data from CSV files.
+    - Loads training, test and ideal function data from CSV files.
     - Finds the best matching ideal functions for each training functiona using least squares. 
     - Maps test data points to those ideal functions if the deviation condition is met.
     - Saves results into a SQLite database.
