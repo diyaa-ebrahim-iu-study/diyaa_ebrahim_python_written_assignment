@@ -30,10 +30,15 @@ def main():
         viz.plot_test_matches(matched_df)
 
         print("[INF] Finished. All results saved in [outputs] and the [database]")
+
+        print_summary(match_map, matched_df)
     except DataFileMissingError as ex:
         print(f"[ERR] {ex}")
     except Exception as ex:
         print(f"[ERR] An unexpected error occurred: {ex}")
-    
+
+def print_summary(match_map, matched_df):
+    print(f"\n[INT] Best Matches: {match_map}")
+    print(f"[INT] Matched Test Data: \n{matched_df.head()}")
 if __name__ == "__main__":
     main()
